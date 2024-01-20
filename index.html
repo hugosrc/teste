@@ -7,17 +7,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="public/styles/globals.css">
-  <link rel="stylesheet" href="public/styles/page.css">
+  <link rel="stylesheet" href="assets/styles/globals.css">
+  <link rel="stylesheet" href="assets/styles/page.css">
 </head>
   <body>
     <div class="container">
       <header class="header">
-        <img class="logo" src="/public/assets/logo.svg" alt="IoT Monitoring Garden Logo">
+        <img class="logo" src="/assets/logo.svg" alt="IoT Monitoring Garden Logo">
         <a class="cta" href="https://github.com/hugosrc/iot-garden-monitoring">Contribuir</a>
       </header>
       <main class="hero">
-        <video class="hero-video" autoplay loop src="https://menu-storage.s3.amazonaws.com/video.mp4"></video>
+        <video class="hero-video" autoplay loop muted src="https://menu-storage.s3.amazonaws.com/video.mp4"></video>
         <div class="hero-content">
           <h1>Monitoramento Inteligente para Agricultura Sustentável</h1>
           <a href="https://medium.com/@hugosrc/cultivo-conectado-do-conceito-%C3%A0-realidade-de-um-sistema-iot-para-monitoramento-agr%C3%ADcola-1f537af61b5b" target="_blank">
@@ -26,5 +26,11 @@
         </div>
       </main>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var video = document.querySelector('.hero-video');
+        video.play();
+      });
+    </script>
   </body>
 </html>
